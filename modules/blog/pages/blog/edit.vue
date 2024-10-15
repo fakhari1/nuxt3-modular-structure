@@ -10,6 +10,7 @@
 import { useBlog } from '../../composables/useBlog';
 import BlogPost from '../../components/BlogPost.vue';
 import { useBlogStore } from '../../store/store';
+import {useRouter} from "nuxt/app";
 
 
 const { currentRoute } = useRouter()

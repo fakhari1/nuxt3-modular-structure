@@ -4,8 +4,8 @@ import type { Nuxt } from '@nuxt/schema'
 
 export default defineNuxtModule({
   meta: {
-    name: 'blog-module',
-    configKey: 'blog-module',
+    name: 'front-module',
+    configKey: 'front-module',
   },
   setup (options: any, nuxt: Nuxt) {
 
@@ -24,9 +24,9 @@ export default defineNuxtModule({
     // Auto register pages
     nuxt.hook('pages:extend', (pages) => {
       pages.push({
-        name: 'blog-page',
-        path: '/blog/:id',
-        file: resolve(__dirname, './pages/blog/edit.vue')
+        name: 'index-page',
+        path: '/',
+        file: resolve(__dirname, './pages/index.vue')
       })
     })
 
